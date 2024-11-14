@@ -9,6 +9,22 @@ import yfinance as yf
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, Border, Side
 
+import streamlit as st
+import requests
+from bs4 import BeautifulSoup
+import time
+
+# Add these Streamlit commands
+st.title("Stock Analysis")  # Adds a title to your app
+
+# If you want to add input fields
+ticker = st.text_input("Enter stock ticker:", "AAPL")  # Creates an input box
+
+# Add a button
+if st.button("Analyze Stock"):
+    # Your stock analysis code goes here
+    st.write(f"Analyzing {ticker}...")
+
 TICKER_FILE = "last_tickers.txt"
 LISTS_FILE = "saved_lists.json"
 
