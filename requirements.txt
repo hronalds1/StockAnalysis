@@ -3,4 +3,4 @@ beautifulsoup4
 requests  # if you're using this for web scrapingbeautifulsoup4
 yfinance
 openpyxl
-openpyxl.styles
+
